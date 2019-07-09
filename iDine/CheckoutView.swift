@@ -13,7 +13,7 @@ struct CheckoutView : View {
     @State private var paymentType = 0
     @State private var addLoyaltyDetails = false
     @State private var loyaltyNumber = ""
-    @State private var tipAmount = 0
+    @State private var tipAmount = 2
 
     var orderPrice: Double {
         Double(order.total)
@@ -28,7 +28,7 @@ struct CheckoutView : View {
     }
 
     static let paymentTypes = ["Cash", "Credit Card", "PayPal", "iDine Points"]
-    static let tipAmounts = [5, 10, 15, 20, 25, 0]
+    static let tipAmounts = [0, 5, 10, 15, 20, 25]
 
     var body: some View {
         Form {
@@ -61,9 +61,11 @@ struct CheckoutView : View {
                 Text("Tip: \(tipPrice, specifier: "%.2f")€")
             }
 
-            Section(header: Text("Total")) {
-                VStack (alignment: .leading){
-                    Text("Total Order: \(totalPrice, specifier: "%.2f")€")
+            Section(header: Text("Total \(totalPrice, specifier: "%.2f")€")) {
+                Button(action: {
+                    // place order
+                }) {
+                    Text("Confirm Order")
                 }
             }
         }.navigationBarTitle("Payment", displayMode: .inline)

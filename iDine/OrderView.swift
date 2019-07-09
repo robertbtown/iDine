@@ -27,7 +27,7 @@ struct OrderView: View {
                 Section {
                     NavigationLink(destination: CheckoutView().environmentObject(order)) {
                         Text("Place Order!")
-                    }
+                    }.disabled(order.items.count < 1)
                 }
             }
             .navigationBarTitle("Order")
