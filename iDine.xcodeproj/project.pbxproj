@@ -17,6 +17,7 @@
 		626C922422D4863D008E219E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C922222D4863D008E219E /* Menu.swift */; };
 		626C922522D4863D008E219E /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626C922322D4863D008E219E /* Order.swift */; };
 		626C922722D48656008E219E /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 626C922622D48656008E219E /* menu.json */; };
+		E6730E8A22D48DB000701669 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6730E8922D48DB000701669 /* ItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		626C922222D4863D008E219E /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		626C922322D4863D008E219E /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		626C922622D48656008E219E /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		E6730E8922D48DB000701669 /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				626C920C22D48527008E219E /* AppDelegate.swift */,
 				626C920E22D48527008E219E /* SceneDelegate.swift */,
 				626C921022D48527008E219E /* ContentView.swift */,
+				E6730E8922D48DB000701669 /* ItemRow.swift */,
 				626C922222D4863D008E219E /* Menu.swift */,
 				626C922322D4863D008E219E /* Order.swift */,
 				626C922022D48617008E219E /* Helper.swift */,
@@ -162,6 +165,7 @@
 				626C922522D4863D008E219E /* Order.swift in Sources */,
 				626C920D22D48527008E219E /* AppDelegate.swift in Sources */,
 				626C920F22D48527008E219E /* SceneDelegate.swift in Sources */,
+				E6730E8A22D48DB000701669 /* ItemRow.swift in Sources */,
 				626C921122D48527008E219E /* ContentView.swift in Sources */,
 				626C922122D48617008E219E /* Helper.swift in Sources */,
 				626C922422D4863D008E219E /* Menu.swift in Sources */,
