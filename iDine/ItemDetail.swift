@@ -18,7 +18,7 @@ struct ItemDetail : View {
                 Image(item.mainImage)
                 Text("Photo: \(item.photoCredit)")
                     .padding(4)
-                    .background(Color.black)
+                    .background(Color.black.opacity(0.6))
                     .font(.caption)
                     .foregroundColor(.white)
                     .cornerRadius(4)
