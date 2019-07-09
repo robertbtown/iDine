@@ -22,6 +22,7 @@
 		E6730E8E22D4A30000701669 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6730E8D22D4A30000701669 /* OrderView.swift */; };
 		E6730E9022D4A45000701669 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6730E8F22D4A45000701669 /* TabView.swift */; };
 		E6730E9222D4A5FF00701669 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6730E9122D4A5FF00701669 /* CheckoutView.swift */; };
+		E6A32A6722D4BED300C84F9E /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A32A6622D4BED300C84F9E /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		E6730E8D22D4A30000701669 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		E6730E8F22D4A45000701669 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		E6730E9122D4A5FF00701669 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		E6A32A6622D4BED300C84F9E /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				E6730E9122D4A5FF00701669 /* CheckoutView.swift */,
 				626C922222D4863D008E219E /* Menu.swift */,
 				626C922322D4863D008E219E /* Order.swift */,
+				E6A32A6622D4BED300C84F9E /* UserData.swift */,
 				626C922022D48617008E219E /* Helper.swift */,
 				626C922622D48656008E219E /* menu.json */,
 				626C921222D48529008E219E /* Assets.xcassets */,
@@ -180,6 +183,7 @@
 				626C920D22D48527008E219E /* AppDelegate.swift in Sources */,
 				626C920F22D48527008E219E /* SceneDelegate.swift in Sources */,
 				E6730E8A22D48DB000701669 /* ItemRow.swift in Sources */,
+				E6A32A6722D4BED300C84F9E /* UserData.swift in Sources */,
 				626C921122D48527008E219E /* ContentView.swift in Sources */,
 				62ED297822D495ED00AE0EF9 /* ItemDetail.swift in Sources */,
 				E6730E8E22D4A30000701669 /* OrderView.swift in Sources */,

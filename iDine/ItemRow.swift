@@ -23,8 +23,20 @@ struct ItemRow: View {
                     .shadow(radius: 3)
                 
                 VStack(alignment: .leading) {
-                    Text(item.name)
-                        .font(.headline)
+                    HStack {
+                        Text(item.name)
+                            .font(.headline)
+
+                        if order.favoriteMenuItems.contains(item) {
+                            Image(systemName: "star.fill")
+                                .imageScale(.small)
+                                .foregroundColor(.yellow)
+                        } else {
+                            Image(systemName: "star")
+                                .imageScale(.small)
+                                .foregroundColor(Color.gray)
+                        }
+                    }
                     Text("\(item.price)€")
                         .font(.subheadline)
                 }

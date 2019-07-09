@@ -30,11 +30,25 @@ struct ItemDetail : View {
                 .padding()
 
             Button(action: {
+                if !self.order.containsFavourite(item: self.item) {
+                    self.order.addFavourite(item: self.item)
+                } else {
+                    self.order.removeFavourite(item: self.item)
+                }
+            }) {
+                if !self.order.containsFavourite(item: self.item) {
+                    Text("Add to Favourites").font(.headline)
+                } else {
+                    Text("Remove from Favourites").font(.headline)
+                }
+            }.padding()
+
+            Button(action: {
                 self.order.add(item: self.item)
             }) {
                 Text("Order now")
                     .font(.headline)
-            }
+            }.padding()
             Spacer()
         }
         .navigationBarTitle(Text(item.name), displayMode: .inline)

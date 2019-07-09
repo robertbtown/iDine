@@ -34,4 +34,24 @@ class Order: BindableObject {
             items.remove(at: index)
         }
     }
+
+    func containsFavourite(item: MenuItem) -> Bool {
+        return favoriteMenuItems.contains(item)
+    }
+
+    func addFavourite(item: MenuItem) {
+        favoriteMenuItems.append(item)
+    }
+
+    func removeFavourite(item: MenuItem) {
+        if let index = favoriteMenuItems.firstIndex(of: item) {
+            favoriteMenuItems.remove(at: index)
+        }
+    }
+
+    var favoriteMenuItems: [MenuItem] = [] {
+        didSet {
+            didChange.send()
+        }
+    }
 }
